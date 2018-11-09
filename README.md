@@ -1,4 +1,4 @@
 # My website
 
-**Made with Gatsby and pixelarity dimension template**
+**Made with Gatsby Starter Dimension and pixelarity dimension template**
 
