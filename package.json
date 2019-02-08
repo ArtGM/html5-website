@@ -1,5 +1,5 @@
 {
-  "name": "am-npm install Portfolio",
+  "name": "am-portfolio",
   "description": "portfolio with gatsby and dimension template",
   "version": "1.0.0",
   "author": "ArtMG",
@@ -18,9 +18,7 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [ "gatsby" ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
