@@ -27,7 +27,7 @@ workTpl.propTypes = {
   data: PropTypes.object.isRequired
 }
 
-/* export const pageQuery = graphql`
+export const pageQuery = graphql`
   query workQuery($slug: String!) {
     contentfulProject(slug: { eq: $slug }) {
       titreDuProjet
@@ -42,4 +42,4 @@ workTpl.propTypes = {
       }
     }
   }
-` */
+`
