@@ -1,13 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import Intro from './Intro';
 import Work from './Work'
-
-import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render () {
-    const { data } = this.props
     let close = (
       <div
         className='close'
@@ -23,7 +19,6 @@ class Main extends React.Component {
         id='main'
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}>
         <Work
-          data={this.props.data}
           article={this.props.article}
           articleTimeout={this.props.articleTimeout}
           onCloseArticle={this.props.onCloseArticle}
@@ -34,7 +29,6 @@ class Main extends React.Component {
           className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}>
           <h2 className='major'>Compétences</h2>
-          <span className='image main'>{/* <img src={pic03} alt='' /> */}</span>
           <p>
             <h3>Site internet:</h3>
             <ul>
@@ -126,28 +120,6 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
-          {/* <ul className='icons'>
-            <li>
-              <a href='#' className='icon fa-twitter'>
-                <span className='label'>Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href='#' className='icon fa-facebook'>
-                <span className='label'>Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href='#' className='icon fa-instagram'>
-                <span className='label'>Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href='#' className='icon fa-github'>
-                <span className='label'>GitHub</span>
-              </a>
-            </li>
-          </ul> */}
           {close}
         </article>
       </div>
