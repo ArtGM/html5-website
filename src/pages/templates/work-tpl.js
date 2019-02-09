@@ -13,7 +13,7 @@ export default class workTpl extends Component {
         <div ref={this.props.setWrapperRef} id='main' style={{ display: 'block' }}>
           <article id={slug} className='active timeout'>
             <h1>{titreDuProjet}</h1>
-            <img src={mockupProjet.fluid.src} />
+            <img src={mockupProjet.fluid.src} alt={titreDuProjet} />
             <p>{description.description}</p>
           </article>
         </div>

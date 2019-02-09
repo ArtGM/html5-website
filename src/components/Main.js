@@ -3,11 +3,8 @@ import PropTypes from 'prop-types'
 // import Intro from './Intro';
 import Work from './Work'
 
-import pic03 from '../images/pic03.jpg'
-
 class Main extends React.Component {
   render () {
-    const { data } = this.props
     let close = (
       <div
         className='close'

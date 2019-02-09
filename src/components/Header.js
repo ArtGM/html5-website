@@ -11,31 +11,31 @@ const Header = (props) => (
     <nav>
       <ul>
         <li>
-          <a
-            href='javascript:void(0);'
+          <button
+            className='a-type'
             onClick={() => {
               props.onOpenArticle('work')
             }}>
             Projets
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            href='javascript:void(0);'
+          <button
+            className='a-type'
             onClick={() => {
               props.onOpenArticle('about')
             }}>
             Compétences
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            href='javascript:void(0);'
+          <button
+            className='a-type'
             onClick={() => {
               props.onOpenArticle('contact')
             }}>
             Contact
-          </a>
+          </button>
         </li>
       </ul>
     </nav>
