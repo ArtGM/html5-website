@@ -6,8 +6,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import '../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {
-
-  let content;
+  /* let content
+  console.log(location)
 
   if (location && location.pathname === '/') {
     content = (
@@ -17,13 +17,13 @@ const Layout = ({ children, location }) => {
     )
   } else {
     content = (
-      <div id="wrapper" className="page">
+      <div id='wrapper' className='page' >
         <div>
           {children}
         </div>
       </div>
     )
-  }
+  } */
 
   return (
     <StaticQuery
@@ -45,9 +45,9 @@ const Layout = ({ children, location }) => {
               { name: 'keywords', content: 'Web, création de sites internet, lorient, vannes, développeur, wordpress' },
             ]}
           >
-            <html lang="fr" />
+            <html lang='fr' />
           </Helmet>
-          {content}
+          {children}
         </>
       )}
     />
@@ -55,7 +55,7 @@ const Layout = ({ children, location }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout

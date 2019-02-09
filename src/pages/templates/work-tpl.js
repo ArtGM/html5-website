@@ -28,8 +28,8 @@ workTpl.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query workQuery($slug: String!) {
-    contentfulProject(slug: { eq: $slug }) {
+  query workQuery {
+    contentfulProject {
       titreDuProjet
       slug
       description {
