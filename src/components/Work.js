@@ -19,7 +19,12 @@ export default class Work extends Component {
         style={{ display: 'none' }}>
         <h2 className='major'>Projets</h2>
         {data.allContentfulProject.edges.map((edge) => (
-          <img src={edge.node.mockupProjet.fluid.src} alt={edge.node.titreDuProjet} />
+          <figure className='project-images-container'>
+            <img src={edge.node.mockupProjet.fluid.src} alt={edge.node.titreDuProjet} className='project-images' />
+            <a href={edge.node.projectUrl} title='voir le site' target='_blank'>
+              {edge.node.titreDuProjet}
+            </a>
+          </figure>
         ))}
         {close}
       </article>

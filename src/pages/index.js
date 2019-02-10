@@ -119,8 +119,9 @@ export const pageQuery = graphql`
         node {
           titreDuProjet
           slug
+          projectUrl
           mockupProjet {
-            fluid {
+            fluid(maxWidth: 365) {
               src
             }
           }
