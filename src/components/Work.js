@@ -21,7 +21,7 @@ export default class Work extends Component {
         {data.allContentfulProject.edges.map((edge) => (
           <figure className='project-images-container'>
             <img src={edge.node.mockupProjet.fluid.src} alt={edge.node.titreDuProjet} className='project-images' />
-            <a href={edge.node.projectUrl} title='voir le site' target='_blank'>
+            <a href={edge.node.projectUrl} title='voir le site' target='_blank' rel='noopener noreferrer nofollow'>
               {edge.node.titreDuProjet}
             </a>
           </figure>

@@ -45,6 +45,9 @@
     #logo {
       margin-top: 10px;
       width: 4rem;
+      @include breakpoint(small) {
+        margin-top: -31px;
+      }
     }
   }
 
