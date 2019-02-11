@@ -115,6 +115,7 @@ class Main extends React.Component {
               <textarea name='message' id='message' rows='4' />
             </div>
             <ul className='actions'>
+              <div data-netlify-recaptcha='true' />
               <li>
                 <input type='submit' value='Envoyer' className='special' />
               </li>
