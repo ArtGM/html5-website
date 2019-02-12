@@ -121,7 +121,7 @@ export const pageQuery = graphql`
           slug
           projectUrl
           mockupProjet {
-            fluid(maxWidth: 365) {
+            fluid(maxWidth: 400) {
               src
             }
           }
