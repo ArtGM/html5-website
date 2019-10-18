@@ -1,3 +1,6 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 module.exports = {
   siteMetadata: {
     title: 'Arthur Morisson | Création de sites internet à Lorient',
@@ -8,8 +11,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: '245kysz4vrer',
-        accessToken: '52b7fd1c8f4d6871ba5af53db1079a844c387b6143cb9773083812e6097ec263'
+        spaceId: process.env.CTF_SPACEID,
+        accessToken: process.env.CTF_ACCESSTOKEN
       }
     },
     'gatsby-plugin-react-helmet',
