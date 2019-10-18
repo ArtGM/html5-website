@@ -101,7 +101,7 @@ class Main extends React.Component {
             : ''}`}
           style={{ display: 'none' }}>
           <h2 className='major'>Contact</h2>
-          <form name='contact-form' method='POST' data-netlify='true'>
+          <form name='contact-form' action='POST' data-netlify='true'>
             <div className='field half first'>
               <label htmlFor='name'>Nom</label>
               <input type='text' name='name' id='name' />
