@@ -101,7 +101,7 @@ class Main extends React.Component {
             : ''}`}
           style={{ display: 'none' }}>
           <h2 className='major'>Contact</h2>
-          <form name='contact-form' action='https://formspree.io/xzbdbjaj'>
+          <form name='contact-form' action='https://formspree.io/xzbdbjaj' method='POST'>
             <div className='field half first'>
               <label htmlFor='name'>Nom</label>
               <input type='text' name='name' id='name' />
